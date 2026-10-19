@@ -10,7 +10,7 @@
     {% if author.avatar contains "://" %}
     <img src="{{ author.avatar }}" alt="{{ author.name }}" fetchpriority="high" />
     {% else %}
-    <img src="{{ author.avatar | prepend: " /images/" | prepend: base_path }}" class="author__avatar"
+    <img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar"
       alt="{{ author.name }}" fetchpriority="high" />
     {% endif %}
   </div>
@@ -38,8 +38,9 @@
           site.data.ui-text[site.locale].website_label | default: "Website" }}</a></li>
       {% endif %}
       {% if author.email %}
-      <li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>{{
-          site.data.ui-text[site.locale].email_label | default: "Email" }}</a></li>
+      <li><a role="button" tabindex="0" data-copy-email="{{ author.email | escape }}"
+          title="{{ author.email | escape }}" style="cursor: pointer;">
+          <i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i><span aria-live="polite">Email (Clic to copy)</span></a></li>
       {% endif %}
 
       <!-- Font Awesome and Academicons icons / Academic websites -->

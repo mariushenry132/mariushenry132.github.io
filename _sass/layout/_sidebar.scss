@@ -322,3 +322,22 @@
     }
   }
 }
+
+// Warm accents for the profile contact icons.
+.author__urls .fa-envelope {
+  color: #ad8747;
+}
+
+.author__urls .fa-location-dot {
+  color: #c6534f;
+}
+
+html[data-theme="dark"] .author__urls {
+  .fa-envelope {
+    color: #d4b477;
+  }
+
+  .fa-location-dot {
+    color: #e47c75;
+  }
+}
