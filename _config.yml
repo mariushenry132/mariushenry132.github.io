@@ -12,7 +12,7 @@ site_theme               : "default" # The available themes options are "default
 title                    : "Marius Henry"
 title_separator          : "-"
 name                     : &name "Marius Henry"
-description              : &description "Marius Henry's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
+description              : &description "Marius Henry, PhD student at Universität des Saarlandes."   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : https://mariushenry132.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -26,7 +26,7 @@ author:
   avatar           : "profile.png"
   name             : "Marius Henry"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : "PhD student"
   location         : "Saarbrücken, Germany"
   employer         : "Universität des Saarlandes"
   uri              : # URL
@@ -125,7 +125,7 @@ staticman:
       options:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
-  hide                   : false     # change to true to hide the RSS feed in the footer
+  hide                   : true      # No blog feed in the single-page site
   path                   : # blank (default) uses feed.xml
 
 
@@ -166,6 +166,34 @@ include:
   - _pages
   - files
 exclude:
+  # Single-page site: retain template examples locally without publishing them.
+  - AGENTS.md
+  - _drafts
+  - _posts
+  - _portfolio
+  - _teaching
+  - _talks
+  - _publications
+  - _pages/archive-layout-with-content.md
+  - _pages/category-archive.html
+  - _pages/collection-archive.html
+  - _pages/cv.md
+  - _pages/markdown.md
+  - _pages/non-menu-page.md
+  - _pages/page-archive.html
+  - _pages/portfolio.html
+  - _pages/publications.html
+  - _pages/tag-archive.html
+  - _pages/talkmap.html
+  - _pages/talks.html
+  - _pages/teaching.html
+  - _pages/terms.md
+  - _pages/year-archive.html
+  - markdown_generator
+  - talkmap
+  - talkmap.py
+  - talkmap.ipynb
+  - talkmap_out.ipynb
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache
