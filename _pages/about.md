@@ -19,7 +19,7 @@ redirect_from:
 
 <div id="about"></div>
 
-I'm Marius Henry, a PhD student in the [LaCoCo](https://lacoco-lab.github.io/home/) Lab at Universität des Saarlandes in Saarbrücken, Germany, supervised by Michael Hahn.
+I'm Marius Henry, a PhD student in the [LaCoCo](https://lacoco-lab.github.io/home/) Lab at Universität des Saarlandes in Saarbrücken, Germany, supervised by [Michael Hahn](https://www.mhahn.info).
 
 With a background in mathematics, I work on understanding large language models (LLMs). In particular, I study the theoretical properties of the underlying structures, such as Transformers, that shape their behavior.
 
