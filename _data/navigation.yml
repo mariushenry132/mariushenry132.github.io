@@ -1,10 +1,7 @@
-# All navigation links point to sections on the homepage.
+# Homepage sections and a direct link to the CV PDF.
 main:
   - title: "About"
     url: /#about
 
   - title: "Publications"
     url: /#publications
-
-  - title: "Contact"
-    url: /#contact

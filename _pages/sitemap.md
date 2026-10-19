@@ -7,4 +7,4 @@ author_profile: true
 
 - [About]({{ '/' | relative_url }}#about)
 - [Publications]({{ '/' | relative_url }}#publications)
-- [Contact]({{ '/' | relative_url }}#contact)
+- [CV (PDF)]({{ '/files/CV.pdf' | relative_url }})
